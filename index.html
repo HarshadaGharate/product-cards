@@ -70,7 +70,7 @@
         <p class="Product-desc">Stay cool and casual in this soft, breathable t-shirt made from premium cotton. </p>
         <h3 class="price"> ₹1,799</h3>
          <div class="quantity">
-            <img src="./images/minus.png" alt="minus" class="icon-img">
+            <img src="./images/minus.png" alt="minus" class="icon-img" onclick="decrement()">
             <span class="quantity-text" id="quantity-text">0</span>
             <img src="./images/add.png" alt="add" class="icon-img" onclick="increment()">
          </div>
@@ -81,6 +81,12 @@
         function increment(){
             let quantity = parseInt(quantityText.innerText);
             quantityText.innerText=++quantity;
+        }
+
+        function decrement(){
+            let quantity = parseInt(quantityText.innerText);
+            quantityText.innerText=--quantity;
+
         }
     </script>
 </body>
