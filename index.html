@@ -76,5 +76,12 @@
          </div>
           <button class="btn">Add to Cart</button>
     </div>
+    <script>
+        const quantityText = document.getElementById("quantity-text")
+        function increment(){
+            let quantity = parseInt(quantityText.innerText);
+            quantityText.innerText=++quantity;
+        }
+    </script>
 </body>
 </html>
