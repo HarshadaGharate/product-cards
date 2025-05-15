@@ -33,6 +33,22 @@
          .Product-desc{
             margin: 5px 10px;
         }
+         .price{
+           text-align: center;
+        }
+         .quantity{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-img{
+            height: 35px;
+            cursor: pointer;
+        }
+       .quantity-text{
+        font-size: 32px;
+        margin: 5px 35px;
+       }
     </style>
 </head>
 <body>
@@ -41,6 +57,12 @@
         <img src="./images/tshirt.png" alt="tshirt" class="Product-img">
         <h2 class="Product-name">Trend Cotton</h2>
         <p class="Product-desc">Stay cool and casual in this soft, breathable t-shirt made from premium cotton. </p>
+        <h3 class="price"> ₹1,799</h3>
+         <div class="quantity">
+            <img src="./images/minus.png" alt="minus" class="icon-img">
+            <span class="quantity-text" id="quantity-text">0</span>
+            <img src="./images/add.png" alt="add" class="icon-img" onclick="increment()">
+         </div>
     </div>
 </body>
 </html>
