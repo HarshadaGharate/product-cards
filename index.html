@@ -80,13 +80,17 @@
         const quantityText = document.getElementById("quantity-text")
         function increment(){
             let quantity = parseInt(quantityText.innerText);
+            if(quantity < 10){
             quantityText.innerText=++quantity;
+            }
+            else{
+                alert("you can't add more than 10 items");
+            }
         }
 
         function decrement(){
             let quantity = parseInt(quantityText.innerText);
             quantityText.innerText=--quantity;
-
         }
     </script>
 </body>
