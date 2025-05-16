@@ -71,7 +71,7 @@
         <h3 class="price"> ₹1,799</h3>
          <div class="quantity">
             <img src="./images/minus.png" alt="minus" class="icon-img" onclick="decrement()">
-            <span class="quantity-text" id="quantity-text">0</span>
+            <span class="quantity-text" id="quantity-text">1</span>
             <img src="./images/add.png" alt="add" class="icon-img" onclick="increment()">
          </div>
           <button class="btn">Add to Cart</button>
@@ -90,7 +90,12 @@
 
         function decrement(){
             let quantity = parseInt(quantityText.innerText);
+            if(quantity > 1){
             quantityText.innerText=--quantity;
+            }
+            else{
+                alert("you can't decrease the quantity less than 1");
+            }
         }
     </script>
 </body>
